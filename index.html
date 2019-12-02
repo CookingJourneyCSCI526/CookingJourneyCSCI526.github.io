@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+        <title>CSCI 526 Cooking Journey</title>
+    </head>
+    
+    <style type="text/css">
+        body {
+            text-align: center;
+        }
+        .navbar{
+            background-color: #146E91;
+        }
+        footer{
+            background-color: #CCF1FF;
+        }
+        
+        #team {
+            background: #F2E1C1;
+            padding: 0px;
+        }
+        
+        #play {
+            padding: 0px;
+            background: #38B2CB;
+        }
+        #about {
+            background: #38B2CB;
+
+        }
+        #video {
+            background: #F2E1C1;
+        }
+        
+        .videowrapper {
+            float: none;
+            clear: both;
+            width: 100%;
+            position: relative;
+            padding-bottom: 56.25%;
+            padding-top: 25px;
+            height: 0;
+        }
+        .videowrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 6%;
+            width: 92%;
+            height: 92%;
+        }
+
+        .self-introduction {
+            text-align: justify;
+            line-height: 1.5;
+            font-size: 12px;
+            color: rgba(0, 0, 0, .65);
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+        }
+
+        .team-box {
+            height : auto;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+            box-shadow: 0 0 2px rgba(0, 0, 0, .15);
+            box-sizing: border-box;
+            background: #fff;
+            border-radius: 2px;
+            transition: all .3s;
+        }
+
+        .time-line {
+            border-bottom: 1px solid #e9e9e9;
+            margin-bottom: 20px;
+        }
+        
+    </style>
+    
+    <body>
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#">
+                    <img src="img/USC-Games_CardOnWhite_Horiz.png" width="auto" height="40" alt="">
+                </a>
+                <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button> -->
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#home" style="font-family: Verdana,Geneva,sans-serif;color:white;">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#about" style="font-family: Verdana,Geneva,sans-serif;color:white;">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#video" style="font-family: Verdana,Geneva,sans-serif;color:white;">Trailer</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#play" style="font-family: Verdana,Geneva,sans-serif;color:white;">Demo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#team" style="font-family: Verdana,Geneva,sans-serif;color:white;">Team</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <section id="home">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/Background.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/Inside.jpg" class="d-block w-100" alt="...">
+                        </div>
+
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+        </section>
+        
+        <section id="about">
+            <div class="container">
+                <br>
+                <br>
+                <br>
+                <h3 style="font-family: Verdana,Geneva,sans-serif; text-align:center"><img src="" width="10%">What is Cooking Journey?</h3>
+                <!-- <br> -->
+                <br>
+                <div class="col-sm-8 offset-2" style= "font-family: Verdana,Geneva,sans-serif; color:white">
+                    Cooking Journey is a cooking game for learning how to cook different cuisines! 
+                    <br><br> 
+                    Through a variety of levels, players can learn how to cook! After each level, players must deliver
+                    the food to the customer.  
+                    <br><br>
+                    Unlock new stages after each delivery and learn how to cook new foods! 
+                    <br> <br>
+                    <h4> Lets Get Cooking! </h4>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+        </section>
+        
+        <section id="video">
+            <div class="container">
+                <br>
+                <br>
+                <br>
+                <h3 style="font-family: Verdana,Geneva,sans-serif; text-align:center">&nbsp;&nbsp;Trailer <img src="" width="10%"></h3>
+                <br>
+                <div class="row col-sm-12">
+                    <p style="text-align:center" class="videowrapper">
+                        <iframe id="envideo" class="embed-responsive-item" src="img/Background.jpg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </p>
+                </div>
+            </div>
+            <br>
+            <br>
+        </section>
+        
+        <section id="play">
+            <div class="container">
+                <br>
+                <br>
+                <br>
+                <h3 style="font-family: Verdana,Geneva,sans-serif; text-align:center"> <img src="" width="10%">Demo </h3>
+                <br>
+                <br>
+                <div class="row col-sm-12">
+                    <p style="text-align:center" class="videowrapper">
+                        <iframe id="envideo" class="embed-responsive-item" src="img/Inside.jpg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </p>
+                </div>
+            </div>
+            <br>
+            <br>
+        </section>
+        
+        <section id="team">
+            <div class="container">
+                <br> <br> <br>
+                <h3 style="font-family: Verdana,Geneva,sans-serif; text-align:center"> Team </h3>
+                <br> <br>
+                <div class="row equal-height-columns">
+                    <div class="col-sm-6  text-center mb-4 ">
+                        <div class="team-box">
+                            <div class="time-line">
+                                <img width="80%" height="80%" class="rounded-circle img-fluid d-block mx-auto" src="" alt="">
+                                <br>
+                                <h5> Yannan Li </h5>
+                                <h6>Masters of Computer Science </h6>
+                            </div>
+                            <p class="self-introduction"> Resturant Scene and Design, Character Animation, Level Setting </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 text-center mb-4 ">
+                        <div class="team-box">
+                            <div class="time-line">
+                                <img width="80%" class="rounded-circle img-fluid d-block mx-auto" src="" alt="">
+                                <br>
+                                <h5> Jiaying Zhong</h5>
+                                <h6>Masters of Computer Science </h6>
+                            </div>
+                            <p class="self-introduction"> Poster, Resturant and Driving Scene Design, Game object logic</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row equal-height-columns">
+                    <div class="col-sm-6  text-center mb-4 ">
+                        <div class="team-box">
+                            <div class="time-line">
+                                <img width="80%" class="rounded-circle img-fluid d-block mx-auto" src="" alt="">
+                                <br>
+                                <h5>Jameson Thai &nbsp;&nbsp;<a href=""><img width="30px" src=""></a></h5>
+                                <h6>Masters of Computer Science in Data Science</h6>
+                            </div>
+                            <p class="self-introduction"> Website, Menu Design, Money System, Level System, NPC Spawn System</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6  text-center mb-4 ">
+                        <div class="team-box">
+                            <div class="time-line">
+                                <img width="80%" class="rounded-circle img-fluid d-block mx-auto" src="" alt="">
+                                <br>
+                                <h5> Yijie Gent &nbsp;&nbsp;<a href=""><img width="30px" src=""></a></h5>
+                                <h6>Masters of Computer Science </h6>
+                            </div>
+                            <p class="self-introduction"> Resturant and Driving Scene Design, Game object logic </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+        </section>
+        
+        <footer class="py-5">
+            <div class="container">
+                <img width = "80%" src="img/USC-Games_CardOnWhite_Horiz.png"> 
+                <br>
+                <p class="m-0 text-center">Copyright &copy; 2019</p>
+            </div>
+        </footer>
+    </body>
+</html>
